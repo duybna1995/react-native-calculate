@@ -143,3 +143,14 @@ export const renderButton = [
         }
     ]
 ]
+
+export interface LibraryProps {
+    url: string,
+    text?: string
+}
+
+export const MAX_IMAGES = 20;
+export const renderImageItems = Array.from({ length: MAX_IMAGES }, () => ({
+    text: 'Waiting...',
+    url: ''
+}))
